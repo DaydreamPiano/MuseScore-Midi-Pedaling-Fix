@@ -20,9 +20,9 @@ for i, track in enumerate(mid.tracks):
     index = 0
     for msg in track:
         b = msg.bytes()
-		# if bytes in msg indicate pedal (64) and pressed (127)
+	# if bytes in msg indicate pedal (64) and pressed (127)
         if b[1] is 64 and b[2] is 127 and skip_toggle is False: 
-            # swap with the next msg in midi file, meaning note
+            # swap with the next msg in midi file
             next_msg = track[index + 1] # get next message
             prev_msg = msg
             msg = next_msg # set current slot to next msg
