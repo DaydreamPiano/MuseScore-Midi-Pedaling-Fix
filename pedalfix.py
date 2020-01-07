@@ -1,5 +1,3 @@
-#swaps every pedal press event with the note event occurring immediatley after in the track, fixing the pedal problems in VSTs like Kontakt Pianos and Pianoteq
-
 from mido import MidiFile
 import sys
 
