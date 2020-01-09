@@ -12,12 +12,10 @@ Fixes the piano pedal being "stuck" when trying to run a MuseScore generated mid
 4. Run `pip3 install mido` in your terminal.
 
 # Usage
-usage: `python3 pedalfix.py <file>`
+usage: `python3 pedalfix.py <input_file> <output_file>`
   
 # Example
-`python3 pedalfix.py test.midi`
-
-Outputs: `pf_test.midi`
+`python3 pedalfix.py test.midi pedalfixed_test.midi`
 
 # Verifying
-Try running the generated "pf_" midi file in a vst such as Garritan CFX. The pedaling should now work as it did in MuseScore.
+Try running the <output_file> midi file in a vst such as Garritan CFX. The pedaling should now work as it did in MuseScore.
