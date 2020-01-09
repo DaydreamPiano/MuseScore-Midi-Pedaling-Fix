@@ -1,15 +1,15 @@
 from mido import MidiFile
 import sys
 
-if len(sys.argv) is not 2:
-    print("usage: python3 pedalfix.py <file>")
+if len(sys.argv) is not 3:
+    print("usage: python3 pedalfix.py <input_file> <output_file>")
     sys.exit()
 
 debug = False
 
 print("processing...")
 
-save_str = "pf_" + sys.argv[1]    
+save_str = sys.argv[2]    
 
 mid = MidiFile(sys.argv[1])
 
